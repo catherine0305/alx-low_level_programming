@@ -5,23 +5,21 @@
  */
 int main(void)
 {
-	int i = 0, j;
-	long d = 1; j = 2;
+	unsigned long int j = 1;
+	unsigned long int k = 2;
+	unsigned long int next;
+	int i;
 
-	while (i < 50)
+	printf("%lu, ", j);
+	for (i = 1; i < 50; i++)
 	{
-		if (i == 1)
-			printf("%ld", d);
-		else if (i == 2)
-			printf(", %d", j);
-		else 
-		{
-			j += d;
-			d = j - d;
-			printf(", %d", j);
-		}
-		++i;
+		printf("%lu", k);
+		next = j + k;
+		j = k;
+		k = next;
+		if (i != 49)
+			printf(", ");
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
