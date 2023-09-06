@@ -11,5 +11,8 @@ ssize_t read_textfile(const char *filename, size_t letters);
 int create_file(const char *filename, char *text_content);
 int append_text_to_file(const char *filename, char *text_content);
 int _putchar(char c);
+void error_98(int fl0, char *buff, char *argv);
+void error_99(int fl0, char *buff, char *argv);
+void error_100(int fl0, char *buff);
 
 #endif
