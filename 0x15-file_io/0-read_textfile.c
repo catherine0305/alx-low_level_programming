@@ -6,7 +6,7 @@
 #include <stdlib.h>
 /**
  * read_textfile - prints text to POSIX
- * @fiename: name of file to read
+ * @filename: name of file to read
  * @letters: letters
  * Return: number of letters
  */
@@ -29,7 +29,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	lenr = read(file_d, buf, letters);
 	close(file_d);
-	if ( lenr == -1)
+	if (lenr == -1)
 	{
 		free(buf);
 		return (0);

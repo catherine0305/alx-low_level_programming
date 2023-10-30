@@ -4,6 +4,8 @@
 
 /**
  * main - check the code
+ * @ac: argument count
+ * @av: array of arguments
  *
  * Return: Always 0.
  */
